@@ -1,0 +1,14 @@
+com/hilti/nitin_framework/unit_test/ManagerBaseActionTest.java
+ com.hilti.nitin_framework.unit_test.ManagerBaseActionTest
+com/hilti/nitin_framework/RunCucumberTest.java
+ com.hilti.nitin_framework.RunCucumberTest
+com/hilti/nitin_framework/unit_test/ManagerTest2.java
+ com.hilti.nitin_framework.unit_test.ManagerTest2
+com/hilti/nitin_framework/stepdefs/ManagerStepDefs.java
+ com.hilti.nitin_framework.stepdefs.ManagerStepDefs
+com/hilti/nitin_framework/unit_test/MessageStorageTest.java
+ com.hilti.nitin_framework.unit_test.MessageStorageTest
+com/hilti/nitin_framework/unit_test/MessageValidatorTest.java
+ com.hilti.nitin_framework.unit_test.MessageValidatorTest
+com/hilti/nitin_framework/tester/ManagerBaseActionTester.java
+ com.hilti.nitin_framework.tester.ManagerBaseActionTester

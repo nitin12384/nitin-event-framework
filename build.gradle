@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    // commmented out when put this in crosscutting lib.
+    //id "io.freefair.lombok" version "6.5.0.2"
+}
+
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+project.ext {
+    cucumberVersion = '5.2.0'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+dependencies {
+
+    // to use @Getter, @Setter, @SneakyThrows etc.
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // for kafka
+    implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '3.2.0'
+
+    // activemq and jms
+    implementation group: 'org.apache.activemq', name: 'activemq-core', version: '5.7.0'
+
+    // to run cucumber test for the framework
+    testImplementation 'io.cucumber:cucumber-java:' + cucumberVersion
+    testImplementation 'io.cucumber:cucumber-junit:' + cucumberVersion
+
+    // for using junit 5 asserts
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,19 @@
+
+
+public methods
+
+setup(tech, topic)
+
+publish(msg)
+publish(msg, topic)
+
+start_consumer()
+start_consumer(topic)
+
+validate_consumed(msg)
+validate_consumed_in_order(List of msg)
+
+validate_produced(msg)
+validate_produced_in_order(List of msg)
+
+

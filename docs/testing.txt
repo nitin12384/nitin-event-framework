@@ -1,0 +1,6 @@
+unit test of all functionalities
+
+behavior test actual working via a dummy consumer and producer
+
+
+

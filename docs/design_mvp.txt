@@ -1,0 +1,31 @@
+
+# mvp
+# no parallelism, only string messages
+
+public methods
+
+setup(tech, topic)
+
+publish(msg)
+
+start_consumer()
+validate_consumed(msg)
+validate_produced(msg)
+
+keep a HashMap<topicname, list<msg>>
+
+# have Kafka and AciveMQ Configs
+
+# have common consumer interface, producer interface
+
+# have kafka and active mq producer and consumers
+
+# have a manager who execute all tasks, setup, publish, consume, validate
+
+# have a message manager who keeps all produced and consumed messages
+
+# have a PublishTech enum.
+
+# for validation, initially only string matching, then maybe JSON matching later
+
+
